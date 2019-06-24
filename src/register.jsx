@@ -80,7 +80,7 @@ class Register extends React.Component {
             regUpPassword: ""
           });
           console.log("register success");
-          return <Redirect to="/" />;
+          return this.props.history.push("/");
         } else {
           console.log("failed");
           this.setState({
