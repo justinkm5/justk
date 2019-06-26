@@ -136,7 +136,10 @@ const FrontPage = () => (
       <div className="right-navbar">
         <ul>
           <li>
-            <Link to="/login">Register</Link>
+            <Link to="/register">Register</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
           </li>
           <li>
             <a href="contact.asp">Cart</a>

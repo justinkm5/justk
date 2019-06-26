@@ -26,6 +26,13 @@ router.post(
         console.log("password is wrong");
         return res.redirect("/login");
       }
+
+      const payload = {
+        user: {
+          id: user.id
+        }
+      };
+
       jwt.sign(
         payload,
         config.get("jwtSecret"),
@@ -35,7 +42,7 @@ router.post(
           res.json({ token });
         }
       );
-
+      console.log("login success");
       res.send({ success: "success" });
     } catch (err) {
       console.error(err.message);

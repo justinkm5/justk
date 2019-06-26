@@ -1,8 +1,6 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "whatwg-fetch";
-import { Redirect } from "react-router-dom";
 
 class Register extends React.Component {
   constructor(props) {

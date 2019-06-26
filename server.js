@@ -6,7 +6,7 @@ const app = express();
 // express urlencoded middleware
 app.use(express.urlencoded({ extended: false }));
 
-//
+// parse json
 app.use(bodyParser.json());
 
 // load up webpack bundle entry point
