@@ -16,6 +16,8 @@ app.use("/", express.static(__dirname + "/public"));
 // node api routes
 app.use("/api/register", require("./routes/api/register.js"));
 app.use("/api/login", require("./routes/api/login.js"));
+app.use("api/listing", require("./routes/api/listing.js"));
+app.use("api/cart", require("./routes/api/cart.js"));
 
 // connect to mongoose
 mongoose
